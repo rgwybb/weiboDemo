@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A6D6913D1AFD0AF50043142C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D6913C1AFD0AF50043142C /* AppDelegate.swift */; };
+		A696FE7F1AFDAF1B008E335A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A696FE651AFDAF1B008E335A /* TabBarController.swift */; };
+		A696FE801AFDAF1B008E335A /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A696FE6A1AFDAF1B008E335A /* DiscoverViewController.swift */; };
+		A696FE811AFDAF1B008E335A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A696FE6F1AFDAF1B008E335A /* HomeViewController.swift */; };
+		A696FE821AFDAF1B008E335A /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A696FE741AFDAF1B008E335A /* MessageViewController.swift */; };
+		A696FE831AFDAF1B008E335A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A696FE781AFDAF1B008E335A /* AppDelegate.swift */; };
+		A696FE841AFDAF1B008E335A /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A696FE7C1AFDAF1B008E335A /* MeViewController.swift */; };
+		A696FE881AFE4A57008E335A /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A696FE871AFE4A57008E335A /* TabBarView.swift */; };
+		A696FE8C1AFEEE7C008E335A /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A696FE8B1AFEEE7C008E335A /* TabBarButton.swift */; };
 		A6D6913F1AFD0AF50043142C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6D6913E1AFD0AF50043142C /* Images.xcassets */; };
 		A6D691421AFD0AF50043142C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6D691401AFD0AF50043142C /* LaunchScreen.xib */; };
 		A6D6914E1AFD0AF50043142C /* weiboTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D6914D1AFD0AF50043142C /* weiboTestTests.swift */; };
@@ -24,9 +31,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A696FE651AFDAF1B008E335A /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		A696FE6A1AFDAF1B008E335A /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		A696FE6F1AFDAF1B008E335A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A696FE741AFDAF1B008E335A /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		A696FE781AFDAF1B008E335A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A696FE791AFDAF1B008E335A /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A696FE7C1AFDAF1B008E335A /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		A696FE871AFE4A57008E335A /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		A696FE8B1AFEEE7C008E335A /* TabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
 		A6D691371AFD0AF50043142C /* weiboTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weiboTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D6913B1AFD0AF50043142C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A6D6913C1AFD0AF50043142C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6D6913E1AFD0AF50043142C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A6D691411AFD0AF50043142C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A6D691471AFD0AF50043142C /* weiboTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weiboTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +67,190 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A696FE621AFDAF1B008E335A /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				A696FE631AFDAF1B008E335A /* Base(主要) */,
+				A696FE681AFDAF1B008E335A /* Discover(广场) */,
+				A696FE6D1AFDAF1B008E335A /* Home(首页) */,
+				A696FE721AFDAF1B008E335A /* Message(消息) */,
+				A696FE771AFDAF1B008E335A /* Other(其他) */,
+				A696FE7A1AFDAF1B008E335A /* Profile(我) */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		A696FE631AFDAF1B008E335A /* Base(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				A696FE641AFDAF1B008E335A /* Controller */,
+				A696FE661AFDAF1B008E335A /* Model */,
+				A696FE671AFDAF1B008E335A /* View */,
+			);
+			path = "Base(主要)";
+			sourceTree = "<group>";
+		};
+		A696FE641AFDAF1B008E335A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A696FE651AFDAF1B008E335A /* TabBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A696FE661AFDAF1B008E335A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A696FE671AFDAF1B008E335A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A696FE871AFE4A57008E335A /* TabBarView.swift */,
+				A696FE8B1AFEEE7C008E335A /* TabBarButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A696FE681AFDAF1B008E335A /* Discover(广场) */ = {
+			isa = PBXGroup;
+			children = (
+				A696FE691AFDAF1B008E335A /* Controller */,
+				A696FE6B1AFDAF1B008E335A /* Model */,
+				A696FE6C1AFDAF1B008E335A /* View */,
+			);
+			path = "Discover(广场)";
+			sourceTree = "<group>";
+		};
+		A696FE691AFDAF1B008E335A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A696FE6A1AFDAF1B008E335A /* DiscoverViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A696FE6B1AFDAF1B008E335A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A696FE6C1AFDAF1B008E335A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A696FE6D1AFDAF1B008E335A /* Home(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				A696FE6E1AFDAF1B008E335A /* Controller */,
+				A696FE701AFDAF1B008E335A /* Model */,
+				A696FE711AFDAF1B008E335A /* View */,
+			);
+			path = "Home(首页)";
+			sourceTree = "<group>";
+		};
+		A696FE6E1AFDAF1B008E335A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A696FE6F1AFDAF1B008E335A /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A696FE701AFDAF1B008E335A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A696FE711AFDAF1B008E335A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A696FE721AFDAF1B008E335A /* Message(消息) */ = {
+			isa = PBXGroup;
+			children = (
+				A696FE731AFDAF1B008E335A /* Controller */,
+				A696FE751AFDAF1B008E335A /* Model */,
+				A696FE761AFDAF1B008E335A /* View */,
+			);
+			path = "Message(消息)";
+			sourceTree = "<group>";
+		};
+		A696FE731AFDAF1B008E335A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A696FE741AFDAF1B008E335A /* MessageViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A696FE751AFDAF1B008E335A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A696FE761AFDAF1B008E335A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A696FE771AFDAF1B008E335A /* Other(其他) */ = {
+			isa = PBXGroup;
+			children = (
+				A696FE781AFDAF1B008E335A /* AppDelegate.swift */,
+				A696FE791AFDAF1B008E335A /* PrefixHeader.pch */,
+			);
+			path = "Other(其他)";
+			sourceTree = "<group>";
+		};
+		A696FE7A1AFDAF1B008E335A /* Profile(我) */ = {
+			isa = PBXGroup;
+			children = (
+				A696FE7B1AFDAF1B008E335A /* Controller */,
+				A696FE7D1AFDAF1B008E335A /* Model */,
+				A696FE7E1AFDAF1B008E335A /* View */,
+			);
+			path = "Profile(我)";
+			sourceTree = "<group>";
+		};
+		A696FE7B1AFDAF1B008E335A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A696FE7C1AFDAF1B008E335A /* MeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A696FE7D1AFDAF1B008E335A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A696FE7E1AFDAF1B008E335A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A6D6912E1AFD0AF50043142C = {
 			isa = PBXGroup;
 			children = (
@@ -73,9 +272,7 @@
 		A6D691391AFD0AF50043142C /* weiboTest */ = {
 			isa = PBXGroup;
 			children = (
-				A6D6913C1AFD0AF50043142C /* AppDelegate.swift */,
-				A6D6913E1AFD0AF50043142C /* Images.xcassets */,
-				A6D691401AFD0AF50043142C /* LaunchScreen.xib */,
+				A696FE621AFDAF1B008E335A /* Class */,
 				A6D6913A1AFD0AF50043142C /* Supporting Files */,
 			);
 			path = weiboTest;
@@ -84,6 +281,8 @@
 		A6D6913A1AFD0AF50043142C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A6D691401AFD0AF50043142C /* LaunchScreen.xib */,
+				A6D6913E1AFD0AF50043142C /* Images.xcassets */,
 				A6D6913B1AFD0AF50043142C /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -205,7 +404,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6D6913D1AFD0AF50043142C /* AppDelegate.swift in Sources */,
+				A696FE841AFDAF1B008E335A /* MeViewController.swift in Sources */,
+				A696FE7F1AFDAF1B008E335A /* TabBarController.swift in Sources */,
+				A696FE801AFDAF1B008E335A /* DiscoverViewController.swift in Sources */,
+				A696FE821AFDAF1B008E335A /* MessageViewController.swift in Sources */,
+				A696FE881AFE4A57008E335A /* TabBarView.swift in Sources */,
+				A696FE8C1AFEEE7C008E335A /* TabBarButton.swift in Sources */,
+				A696FE831AFDAF1B008E335A /* AppDelegate.swift in Sources */,
+				A696FE811AFDAF1B008E335A /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +470,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = weiboTest/PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -308,6 +515,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = weiboTest/PrefixHeader.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -326,9 +534,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = weiboTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -336,9 +547,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = weiboTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -395,6 +609,7 @@
 				A6D691531AFD0AF50043142C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A6D691541AFD0AF50043142C /* Build configuration list for PBXNativeTarget "weiboTestTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +618,7 @@
 				A6D691561AFD0AF50043142C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

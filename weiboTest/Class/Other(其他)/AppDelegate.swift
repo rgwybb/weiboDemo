@@ -15,9 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        //显示状态栏
+        application.statusBarHidden=false
+        
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        // Override point for customization after application launch.
-        self.window!.backgroundColor = UIColor.whiteColor()
+        //设置窗口的跟控制器
+        self.window!.rootViewController=TabBarController()
+        
         self.window!.makeKeyAndVisible()
         return true
     }
