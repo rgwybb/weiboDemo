@@ -19,15 +19,6 @@ class TabBarView: UIView {
     var delegate:TabBarViewDelegate?
     weak var selectedButton=TabBarButton()
     
-//    required override init(frame: CGRect) {
-//        super.init(frame: frame)
-//        //self.backgroundColor=UIColor(patternImage: UIImage(named: "tabbar_background")!)
-//    }
-//
-//    required init(coder aDecoder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
-   
     func addTabBarButtonWithItem(item : UITabBarItem){
         //创建一个按钮
         var button = TabBarButton()
