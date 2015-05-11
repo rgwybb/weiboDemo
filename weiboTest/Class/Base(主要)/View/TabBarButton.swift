@@ -11,22 +11,13 @@ import UIKit
 class TabBarButton: UIButton {
     
     let TabBarButtonRatio:CGFloat=0.6
-//    //var _item : UITabBarItem
-//    var item : UITabBarItem{
-//        //self._item=item
-//        get{
-//            return self.item
-//        }
-//        set{
-//            self.setTitle(item.title, forState: UIControlState.Normal)
-//            self.setImage(item.image, forState: UIControlState.Normal)
-//            self.setImage(item.selectedImage, forState: UIControlState.Selected)
-//        }
-//    }
     required override init(frame: CGRect) {
         super.init(frame: frame)
-        //设置背景图片
-        self.setBackgroundImage(UIImage(named: "tabbar_slider"), forState: UIControlState.Selected)
+        //IOS6设置背景图片
+        //self.setBackgroundImage(UIImage(named: "tabbar_slider"), forState: UIControlState.Selected)
+        self.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        self.setTitleColor(UIColor.orangeColor(), forState: UIControlState.Selected)
+        self.adjustsImageWhenHighlighted=false
         //设置图标居中
         self.imageView?.contentMode=UIViewContentMode.Center
         //设置文字居中

@@ -44,14 +44,11 @@ class TabBarController: UITabBarController, TabBarViewDelegate{
     }
     /**
     监听tabbar按钮的点击
-    
-    :param: tabBar                <#tabBar description#>
-    :param: didSelectedButtonFrom 原来的位置
+    :param: tabBar                自定义的tabbar
     :param: to                    现在的位置
     */
-    func tabBar(tabBar: TabBarView, didSelectedButtonFrom: Int, to: Int) {
-        println(to)
-        println(didSelectedButtonFrom)
+    func tabBar(tabBar: TabBarView, to: Int) {
+        self.selectedIndex=to
     } /**
     初始化所有子控制器
     */
