@@ -49,9 +49,8 @@ class TabBarController: UITabBarController, TabBarViewDelegate{
     :param: didSelectedButtonFrom 原来的位置
     :param: to                    现在的位置
     */
-    func tabBar(tabBar: TabBarView, didSelectedButtonFrom: Int, to: Int) {
-        println(to)
-        println(didSelectedButtonFrom)
+    func tabBar(tabBar: TabBarView, to: Int) {
+        self.selectedIndex=to
     } /**
     初始化所有子控制器
     */

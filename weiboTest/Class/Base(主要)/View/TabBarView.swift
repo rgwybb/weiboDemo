@@ -11,21 +11,12 @@ import UIKit
 
 //代理
 protocol TabBarViewDelegate:NSObjectProtocol{
-    func tabBar(tabBar:TabBarView, didSelectedButtonFrom:Int,to:Int)
+    func tabBar(tabBar:TabBarView,to:Int)
 }
 
 class TabBarView: UIView {
     var delegate:TabBarViewDelegate?
     weak var selectedButton=TabBarButton()
-    
-    required override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.backgroundColor=UIColor(patternImage: UIImage(named: "tabbar_background")!)
-    }
-
-    required init(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
    
     func addTabBarButtonWithItem(item : UITabBarItem){
         //创建一个按钮
@@ -45,13 +36,9 @@ class TabBarView: UIView {
     监听按钮的点击
     */
     func buttonClick(button:TabBarButton) {
-//        if((delegate) != nil){
-//            delegate!.tabBar(self, didSelectedButtonFrom: self.selectedButton!.tag, to: button.tag)
-//        }
-//        if ((delegate) != nil) {
-//            delegate?.tabBar(self, didSelectedButtonFrom: self.selectedButton!.tag, to: button.tag)
-//        }
-        
+        if((delegate) != nil){
+            delegate!.tabBar(self, to: button.tag)
+        }
         self.selectedButton?.selected=false
         button.selected=true
         self.selectedButton=button
