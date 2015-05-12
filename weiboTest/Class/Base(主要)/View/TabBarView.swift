@@ -14,11 +14,9 @@ protocol TabBarViewDelegate:NSObjectProtocol{
     //回调函数
     func tabBar(tabBar:TabBarView, to:Int)
 }
-
 class TabBarView: UIView {
     var delegate:TabBarViewDelegate?
     weak var selectedButton=TabBarButton()
-    
     func addTabBarButtonWithItem(item : UITabBarItem){
         //创建一个按钮
         var button = TabBarButton()
